@@ -32,6 +32,31 @@ tabBlock.prototype = {
 $('.video-full').each(function(){
 	$(this).height($(this).width()/$(this).data('multiple'));
 })
+function throttle(func, wait, mustRun) {
+    var timeout,
+        startTime = new Date();
+ 
+    return function() {
+        var context = this,
+            args = arguments,
+            curTime = new Date();
+        clearTimeout(timeout);
+        if(curTime - startTime >= mustRun){
+            func.apply(context,args);
+            startTime = curTime;
+        }else{
+            timeout = setTimeout(func, wait);
+        }
+    };
+};
+function realFunc(){
+    console.log("Success");
+    $('.video-full').each(function(){
+		$(this).height($(this).width()/$(this).data('multiple'));
+	})
+}
+window.addEventListener('resize',throttle(realFunc,500,1000));
+
 var listsEnterTimeout,listsLeaveTimeout;
 $('.lists-view>.span4').each(function(index,item){
 	// $(item).on('click',function(){

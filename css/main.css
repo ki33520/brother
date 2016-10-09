@@ -190,7 +190,7 @@ header .navbar-inverse .nav-collapse .nav .active > a:focus{
 	border: 5px solid #00a0e9;
 	padding: 30px;
 	border-radius: 30px;
-	background-color: #c9e8f6;
+	background-color: #fff;
 }
 .lists-view .view-item-2 .triangle-up,
 .lists-view .view-item-5 .triangle-up{
@@ -276,6 +276,39 @@ header .navbar-inverse .nav-collapse .nav .active > a:focus{
 .lists-view .view-item-6 .view-wrap .icon{
 	background-image: url(../images/lists_icon_6.png);
 }
+.lists-view .pop .inner .tags{
+	text-align: center;
+	line-height: 150%;
+}
+.lists-view .pop .inner .tags .tag{
+	display: inline-block;
+	padding: 0 0.5rem;
+	margin: 0.2rem 0.3rem;
+}
+.lists-view .pop .inner .tags .tag-1{
+	background-color: #00A0E8;
+	color: #00A0E8;
+}
+.lists-view .pop .inner .tags .tag-2{
+	background-color: #00A0E8;
+	color: #00A0E8;
+}
+.lists-view .pop .inner .tags .tag-3{
+	background-color: #00A0E8;
+	color: #00A0E8;
+}
+.lists-view .pop .inner .tags .tag-4{
+	background-color: #00A0E8;
+	color: #00A0E8;
+}
+.lists-view .pop .inner .tags .tag-5{
+	background-color: #00A0E8;
+	color: #00A0E8;
+}
+.lists-view .pop .inner .tags .tag-6{
+	background-color: #00A0E8;
+	color: #00A0E8;
+}
 .lists-view .pop .inner .dis{
 	color: #00A0E8;
 	font-weight: bold;
@@ -350,6 +383,7 @@ header .navbar-inverse .nav-collapse .nav .active > a:focus{
 	border-radius: 20px;
 	overflow: hidden;
 	padding: 10px;
+	min-height: 420px;
 }
 .tab-0 .video-wrap .inner{
 	border: 5px solid #00a0e9;
@@ -522,6 +556,7 @@ header .navbar-inverse .nav-collapse .nav .active > a:focus{
 		border: none;
 		padding: 5px;
 		border-radius: 5px;
+		min-height: 100px;
 	}
 	.tab-block .tab-nav{
 		position: static;
