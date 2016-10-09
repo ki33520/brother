@@ -2,6 +2,10 @@ body{
 	padding-top: 100px;
 	font-size: 12px;
 }
+ul,
+li{
+	list-style: none;
+}
 a{
 	color: #132B8C;
 	text-decoration: none;
@@ -397,6 +401,14 @@ header .navbar-inverse .nav-collapse .nav .active > a:focus{
 .tab-3 .video-wrap .inner{
 	border: 5px solid #fce6cc;
 }
+.tab-block .tab-content .tab-content-item ul li{
+	width: 33.33%;
+	float: left;
+	list-style: none;
+}
+.tab-block .tab-content .tab-content-item ul li .img-wrap img{
+	width: 100%;
+}
 .tab-block .tab-nav{
 	position: absolute;
 	width: 30px;
@@ -439,6 +451,9 @@ header .navbar-inverse .nav-collapse .nav .active > a:focus{
 }
 .tab-block .tab-nav .active{
 	z-index: 5;
+}
+.masker{
+	position: fixed;
 }
 
 
